@@ -40,21 +40,21 @@ for file in training_files:
 			user_file = open(os.path.join(target_folder, str(user_id) + "_movies.txt"),"a+")
 
 			# =========================================================================================================
-			# checking if last movieId-1 has an entry for this file before saving new entry
-			user_file_aux = open(os.path.join(target_folder, str(user_id) + "_movies.txt"),"r")
-			last_saved_movie_id = "0"
-			for curr_file_line in user_file_aux:
-				last_saved_movie_id = curr_file_line.split(',')[1]
+			# # checking if last movieId-1 has an entry for this file before saving new entry
+			# user_file_aux = open(os.path.join(target_folder, str(user_id) + "_movies.txt"),"r")
+			# last_saved_movie_id = "0"
+			# for curr_file_line in user_file_aux:
+			# 	last_saved_movie_id = curr_file_line.split(',')[1]
 
-			gap = int(movie_id) - int(last_saved_movie_id)
-			user_file_aux.close()
+			# gap = int(movie_id) - int(last_saved_movie_id)
+			# user_file_aux.close()
 
-			user_file_aux = open(os.path.join(target_folder, str(user_id) + "_movies.txt"),"a+")
-			# completing ids of movies not rated
-			for x in range(1,int(movie_id)): # 'x' goes from 1 to movie_id-1
-				content_fix = str(user_id) + "," + str((int(last_saved_movie_id) + x)) + "," + "0" + "," + "0000-00-00" + "\n"
-				user_file_aux.write(content_fix)
-			user_file_aux.close()		
+			# user_file_aux = open(os.path.join(target_folder, str(user_id) + "_movies.txt"),"a+")
+			# # completing ids of movies not rated
+			# for x in range(1,int(movie_id)): # 'x' goes from 1 to movie_id-1
+			# 	content_fix = str(user_id) + "," + str((int(last_saved_movie_id) + x)) + "," + "0" + "," + "0000-00-00" + "\n"
+			# 	user_file_aux.write(content_fix)
+			# user_file_aux.close()	
 			# =========================================================================================================
 
 			# creating line content: USER_ID, MOVIE_ID, RATING, DATE
@@ -66,5 +66,7 @@ for file in training_files:
 			# closing file
 			user_file.close()
 			# wait = input("CONTENT SAVED")
+	# closing file
+	current_file.close()
 	print("> file '" + file + "' finished parsing.")
 	
