@@ -5,14 +5,14 @@ import os
 # [ GENERATING TARGET USER ROW ]
 
 # Target user id
-target_user_id = '1054884'
+target_user_id = '2611141'
 # Target test folder
 target_test_folder = 'test_dataset/'
 target_training_folder = 'training_dataset/'
 
 # opening user file			
 target_user_ratings = open(target_test_folder + target_user_id + '_movies.txt', "r")
-single_target_user_file = open('target_userId' + target_user_id + '_rated_movies.txt', "a+")
+single_target_user_file = open('target_userId_' + target_user_id + '_rated_movies.txt', "a+")
 
 target_user_row_content = ""
 line_count = 0
@@ -39,7 +39,7 @@ target_user_ratings = open(target_test_folder + target_user_id + '_movies.txt', 
 # Getting all files within training directory
 movies_files = os.listdir(target_training_folder)
 
-training_points_Ui = open('Ui_R_Matrix_TRAINING_rated_movies.txt', "a+")
+training_points_Ui = open(target_user_id + '_R_Matrix_TRAINING_rated_movies.txt', "a+")
 
 training_points_Ui.write(target_user_row_content_aux[:-1] + '\n')
 
