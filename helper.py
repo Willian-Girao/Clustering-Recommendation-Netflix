@@ -8,3 +8,7 @@ def returnLineType(data):
 #grab last 4 characters of the file name:
 def last_4chars(x):
     return x.split('_')[0]
+
+# Returns movie id
+def getMovieId(file_name):
+	return file_name.split('_')[0].replace('.txt', '')
