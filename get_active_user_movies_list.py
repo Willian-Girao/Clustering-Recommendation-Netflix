@@ -9,7 +9,7 @@ if not os.path.exists('movies_per_user'):
 
 # Top n active user
 active_users = dict()
-top_active_users_file = open('1k_top_active_users.txt', "r")
+top_active_users_file = open('top_5_least_active_users.txt', "r")
 for user in top_active_users_file:
 	user_id = user.replace('\n', '')
 
