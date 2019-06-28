@@ -1,10 +1,10 @@
 ## Test dataset generate from the Netflix dataset
 
-	This dataset is a subset of the original dataset. It contains 1k random less active 
+This dataset is a subset of the original dataset. It contains 1k random less active 
 users (smaller count of ratings) and their respective ratings list. The total amount
 of rated movies within this subset is xx,xxx.
 
-### ./random_1k_less_active_users_moviesList
+- ./random_1k_less_active_users_moviesList
 
 The folder './random_1k_less_active_users_moviesList' contains 1000 text files
 named 'xxx_movies.txt', where 'xxx' is the id of a user. The sctructure of each file
@@ -21,7 +21,7 @@ For instance, if the file '1001143_movies.txt' contains:
 
 we know that the user  with id 1001143 has given rate 5 for the movie with id 289, and so on.
 
-### random_1k_less_active_users.txt
+- random_1k_less_active_users.txt
 
 Text file contaning the list of user ids and their respective ratings count. The sctructure 
 of each file is 'movied_id, rate'.
