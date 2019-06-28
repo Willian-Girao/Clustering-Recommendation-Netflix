@@ -1,7 +1,8 @@
 /* Test dataset generate from the Netflix dataset */
 
 	This dataset is a subset of the original dataset. It contains the top 1k most
-active users (bigger count of ratings) and their respective ratings list.
+active users (bigger count of ratings) and their respective ratings list. The total amount
+of rated movies within this subset is 15,491,807.
 
 ## ./top_1k_active_users
 
