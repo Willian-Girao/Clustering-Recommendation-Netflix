@@ -26,7 +26,6 @@ we know that the user  with id 1001143 has given rate 5 for the movie with id 28
 
 Text file contaning the list of user ids and their respective ratings count. The sctructure 
 of each file is 'movied_id, rate'.
-
 ```
 305344, 17653
 387418, 17436
@@ -35,7 +34,6 @@ of each file is 'movied_id, rate'.
 2118461, 14831
 ...
 ```
-
 we know that the user  with id 305344 have rated 17653 movies, and so on.
 
 
