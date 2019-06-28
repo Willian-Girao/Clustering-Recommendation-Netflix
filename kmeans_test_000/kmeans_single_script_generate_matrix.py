@@ -5,7 +5,12 @@ import os
 # [ GENERATING TARGET USER ROW ]
 
 # Target user id
-target_user_id = '2611141'
+# target_user_id = '2611141'
+# target_user_id = '2151955'
+# target_user_id = '1512089'
+# target_user_id = '1081982'
+target_user_id = '1054884'
+
 # Target test folder
 target_test_folder = 'test_dataset/'
 target_training_folder = 'training_dataset/'
@@ -79,8 +84,11 @@ for file in movies_files:
 				found_training_id_count = found_training_id_count + 1				
 
 		content.replace('\n', '')
-		content_aux = content[:-1]	
-		training_points_Ui.write(content_aux[:-1] + '\n')
+		content_aux = content[:-1]
 
+		aux_2 = content_aux[:-1]
+
+		if aux_2[-1] != '0':
+			training_points_Ui.write(content_aux[:-1] + '\n')
 		print("> Finished parsing file '" + file + "' - rated count: " + str(found_training_id_count))
 training_points_Ui.close()

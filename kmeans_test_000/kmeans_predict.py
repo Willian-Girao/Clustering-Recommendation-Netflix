@@ -4,7 +4,11 @@ import math
 from sklearn.cluster import KMeans
 
 # Target user id
-target_user_id = '2611141'
+# target_user_id = '2611141'
+# target_user_id = '2151955'
+# target_user_id = '1512089'
+# target_user_id = '1081982'
+target_user_id = '1054884'
 
 def calcDistance(point_a, point_b):
 	comp_sum = 0
@@ -26,9 +30,12 @@ def predictRate(targe_user, top_n_closest, X, real_original_ratings):
 	print(list(targe_user))
 	print('\n')
 
+	print('Closest ratings:')	
 	sum_rates = 0
 	for index in wanted_indexes:
 		sum_rates = sum_rates + real_original_ratings[index]
+		print(real_original_ratings[index])
+	print('\n')
 
 	return sum_rates / len(wanted_indexes)
 
