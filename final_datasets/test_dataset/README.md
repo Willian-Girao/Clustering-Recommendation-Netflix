@@ -2,7 +2,8 @@
 
 This dataset is a subset of the original dataset. It contains 1k random less active 
 users (smaller count of ratings) and their respective ratings list. The total amount
-of rated movies within this subset is xx,xxx.
+of rated movies within this subset is **62,749**. The number of movies rated per user
+varies from **7 up to 157**.
 
 - ./random_1k_less_active_users_moviesList
 
