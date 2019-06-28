@@ -11,7 +11,7 @@ named 'xxx_movies.txt', where 'xxx' is the id of a user. The sctructure of each 
 is 'movied_id, rate'.
 
 For instance, if the file '1001143_movies.txt' contains:
-´´´
+´´´txt
 289, 5
 429, 5
 483, 4
@@ -26,7 +26,7 @@ we know that the user  with id 1001143 has given rate 5 for the movie with id 28
 Text file contaning the list of user ids and their respective ratings count. The sctructure 
 of each file is 'movied_id, rate'.
 
-´´´
+´´´txt
 305344, 17653
 387418, 17436
 2439493, 16565
