@@ -2,7 +2,7 @@
 
 This dataset is a subset of the original dataset. It contains the top 1k most active 
 users (bigger count of ratings) and their respective ratings list. The total amount
-of rated movies within this subset is **15,491,807**. The number of movies rated per user
+of ratings within this subset is **15,491,807**. The number of movies rated per user
 varies from **1102 up to 17653**.
 
 - ./top_1k_active_users
