@@ -19,12 +19,13 @@ for user in top_active_users_file:
 top_active_users_file.close()
 
 # Getting all files within target directory.
-training_files = os.listdir('top_1k_rated_movies/')
+training_files = os.listdir('top_1k_rated_movies_2/')
 
 # Looping through each file found.
+count = 0
 for file in training_files:
 	# Open current traning file.
-	current_file = open('top_1k_rated_movies/' + file, "r")
+	current_file = open('top_1k_rated_movies_2/' + file, "r")
 
 	is_first_line = True
 	movie_id = ""
@@ -42,8 +43,7 @@ for file in training_files:
 			if user_id in active_users:
 				file_content[user_id] = {'user_id': user_id, 'rating': user_rating}	
 	# closing file
-	current_file.close()
-	print("> file '" + file + "' finished parsing.")
+	current_file.close()	
 
 	# 'file_content' contains only information from file associated with active users - save them to theirs respective files	
 	for key, value in file_content.items():
@@ -52,5 +52,9 @@ for file in training_files:
 		target_folder = 'C:/Users/willi/UFF/Machine Learning/download/final_datasets_2/top_1k_active_users'
 		user_file = open(os.path.join(target_folder, value['user_id'] + "_movies.txt"),"a+")
 		user_file.write(movie_id + ", " + value['rating'] + "\n")
-		user_file.close()
+		user_file.close()		
 		# wait = input("CONTENT SAVED")	
+
+	print("> file '" + file + "' finished parsing.")
+	count = count + 1
+	print(str(count) + "/1000")
