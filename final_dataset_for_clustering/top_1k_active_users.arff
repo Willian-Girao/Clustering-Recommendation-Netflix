@@ -1,3 +1,9 @@
+@relation userId_ratingsCount_sotedById
+
+@attribute user_id numeric
+@attribute ratings_count numeric
+
+@data
 1333, 2982
 3321, 4395
 3998, 2225
