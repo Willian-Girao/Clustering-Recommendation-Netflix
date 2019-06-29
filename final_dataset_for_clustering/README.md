@@ -1,6 +1,6 @@
 ### Dataset generated from the original Netflix dataset
 
-This dataset is a subset of the original dataset. This dataset consists of two subsets of the original dataset's users and movies, where the **users** are the top **1,000 most active users** (a.k.a. have rated various movies), and the **movies** are the **top 2,000 most rated** ones. The total amount of ratings within this dataset is **2,273,141**.
+This dataset is a subset of the original dataset. This dataset consists of two subsets of the original dataset's users and movies, where the **users** are the top **1,000 most active users** (a.k.a. have rated various movies), and the **movies** are the **top 2,000 most rated** ones. The total amount of ratings within this dataset is **1,273,141**.
 
 #### top_1k_active_users.txt
 
