@@ -4,6 +4,12 @@ import math
 from sklearn.cluster import KMeans
 import random, os
 
+def calcDistance(point_a, point_b):
+	comp_sum = 0
+	for x in range(0,len(point_a)):
+		comp_sum = comp_sum + (point_a[x] - point_b[x])**2
+	return math.sqrt(comp_sum)
+
 testMatrix = []
 test_matrix = open("test_matrix_test_users_100_random_0.txt", "r")
 for line in test_matrix:
@@ -71,7 +77,7 @@ for userr in testMatrix:
 
 	X = np.array(matrix_R)
 
-	kmeans = KMeans(n_clusters=2)
+	kmeans = KMeans(n_clusters=6)
 	# Clustering
 	kmeans.fit(X) 
 
@@ -85,6 +91,27 @@ for userr in testMatrix:
 			target_cluster.append(X[point])
 	print("\n")
 
+	target_vec_aux = np.array(target_user_vector)
+
+	calculated_distances = []
+	for datapoint in target_cluster:
+		distance = calcDistance(target_vec_aux, datapoint)
+		calculated_distances.append({'distance': distance, 'datapoint': datapoint})
+
+
+	sorted_distances = sorted(calculated_distances, key = lambda i: i['distance'])
+
+	count = 0
+	top_n_closest = []
+	for dist in sorted_distances:
+		if dist['distance'] != 0.0:
+			if count < n_closest_to_target:
+				top_n_closest.append(dist['datapoint'])
+			else:
+				break
+			count = count + 1
+
+	# target_cluster = [] # This will actually be the points within the cluster that are closer to the tharget
 	# print("Points in target cluster: ")
 	# for point in target_cluster:
 	# 	print(point)
