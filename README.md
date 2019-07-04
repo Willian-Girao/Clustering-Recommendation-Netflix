@@ -1,2 +1,2 @@
-# netflix_dataset_processing
-Scripts for pre-processing of the Netflix Prize dataset.
+# Machine Learning Tecniques for Clustering and General Data Analysis
+Content currently contains user **rating predictions**  and **movie similarity predictions** utilizing to clustering tecniques (Knn and Kmeans) on the famous Netflix dataset. Problem modeling, dataset pre-processing and experiments descriptions and analysis/interpretations for the first run of experiments are presented in the form of an paper (*netflix_dataset_processing/kmeans_knn_ratingPrediction_moviePrediction_analysis_000/relatorio_dinal.pdf*).
