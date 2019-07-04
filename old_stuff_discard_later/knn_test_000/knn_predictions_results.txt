@@ -1,5 +1,0 @@
-User id: 1054884 - Predicted: [1] - Actual: 2
-User id: 1081982 - Predicted: [5] - Actual: 5
-User id: 1512089 - Predicted: [4] - Actual: 4
-User id: 2151955 - Predicted: [4] - Actual: 4
-User id: 2611141 - Predicted: [3] - Actual: 3

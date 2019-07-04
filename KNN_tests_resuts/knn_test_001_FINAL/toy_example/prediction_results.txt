@@ -1,9 +1,0 @@
-User ids and movies ids have to be mapped back to their original ids within the original dataset!
-
-Rating predictions results: 
-
-Movie id: 0-> Predicted rating: 2.0
-Movie id: 1-> Predicted rating: 2.5
-Movie id: 2-> Predicted rating: 3.5
-Movie id: 3-> Predicted rating: 1.5
-Movie id: 4-> Predicted rating: 4.5
